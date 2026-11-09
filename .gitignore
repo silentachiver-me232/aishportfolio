@@ -5,4 +5,5 @@ Thumbs.db
 
 # Archives & Temporary files
 *.zip
-
+*.pptm
+scratch/
