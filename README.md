@@ -1,107 +1,96 @@
-# Interactive Tri-Card Hero Screen Experience
+# Aishwarya Harishankar — Official Portfolio & Showcase
 
-A high-performance, modern full-screen hero section featuring 3 overlapping interactive image panels, reactive depth elevation, and dedicated ambient soundtracks matching your design wireframe.
+[![Deploy static content to Pages](https://github.com/silentachiver-me232/aishportfolio/actions/workflows/static.yml/badge.svg)](https://github.com/silentachiver-me232/aishportfolio/actions/workflows/static.yml)
+[![Live Site](https://img.shields.io/badge/Live_Website-GitHub_Pages-2ea44f?style=flat&logo=github)](https://silentachiver-me232.github.io/aishportfolio/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
----
+A polished, high-performance, responsive general-showcase portfolio for **Aishwarya Harishankar**, Indian Actress, Model, and Digital Creator based in Pune, India. Designed for casting directors, production houses, brand collaborations, and fans worldwide.
 
-## 🌟 Key Features
-
-1. **Full-Screen Fit First Section (`100vh`)**:
-   - The first section fills the entire screen on initial load.
-   - **Natural Non-Sticky Scroll**: As you scroll down, the section smoothly scrolls out of view in standard document flow, leading to the subsequent content sections.
-
-2. **Diagram-Accurate Overlapping Layout**:
-   - **Image 1 (Left / Dark Red)**: Anchored on the left edge with a dark red border frame.
-   - **Image 2 (Center / Orange)**: Overlaps the right edge of Image 1 with an orange border frame.
-   - **Image 3 (Right / Yellow)**: Overlaps the right edge of Image 2 with a vivid yellow border frame.
-
-3. **Hover Depth Interaction**:
-   - When the cursor hovers over any card, it **comes ahead** (elevated `z-index`, subtle 3D scale, glowing themed shadow).
-   - The other two cards **get pushed back** (receding scale, dimmed brightness and subtle depth blur).
-
-4. **Dedicated Interactive Soundtrack**:
-   - Hovering over a card instantly triggers that card's unique ambient soundtrack with smooth fade-in.
-   - Hovering to another card smoothly crossfades the audio to the new card's music.
-   - Moving the cursor out of the cards container smoothly fades the music out.
-   - Built with a **Procedural Web Audio Engine** so it works immediately out-of-the-box with **zero external dependencies** and 100% offline reliability.
-
-5. **Audio Unlock & Autoplay Compliance**:
-   - Modern browsers require user interaction before playing audio with sound. A sleek top-right pill lets users enable sound with one click, or clicking anywhere on the page unlocks it automatically.
+🌐 **Live Demo:** [https://silentachiver-me232.github.io/aishportfolio/](https://silentachiver-me232.github.io/aishportfolio/)
 
 ---
 
-## 📂 Project Structure
+## 🌟 Highlights & Features
+
+- **Cinematic Visual Aesthetic**:
+  - Deep obsidian theme with rose-gold (`#e08ba5`) accents inspired by the "Gulabachi Kali" identity.
+  - Seamless Light Mode toggle respecting system `prefers-color-scheme` with `localStorage` persistence.
+  - Elegant typography pairing *Playfair Display* (cinematic serif), *Poppins* (modern sans), and *Noto Sans Devanagari* for authentic Marathi script (*माझ्या सोन्या*).
+
+- **Dynamic Data-Driven Content (`js/config.js`)**:
+  - All follower metrics, videos, vlogs, gallery photos, and social links are centralized in a single configuration file. Adding or updating a project takes seconds without touching HTML.
+
+- **Interactive Showcases**:
+  - **Live Stats Strip**: Smooth animated count-up numbers triggered on scroll (`IntersectionObserver`).
+  - **Featured Work**: Filterable by *All*, *Music Videos*, and *Short Films*, featuring direct YouTube watch links and "Coming Soon" cards for upcoming releases.
+  - **Photo Gallery & Lightbox**: Responsive masonry layout with an accessible fullscreen lightbox supporting keyboard navigation (`ArrowLeft`, `ArrowRight`, `Escape`) and mobile touch swipe.
+  - **Creator Corner**: Horizontal swipeable scroll container on mobile and responsive multi-column grid on desktop.
+
+- **Production-Ready & Accessible**:
+  - **Zero Build Step**: Pure HTML5, modern CSS, and vanilla JavaScript—deploys automatically via GitHub Pages.
+  - **WCAG AA Compliant**: High contrast ratios, 44px+ minimum touch targets, visible keyboard focus indicators (`:focus-visible`), and `@media (prefers-reduced-motion)` support.
+  - **SEO & Social Sharing**: Open Graph and Twitter Card tags configured with `p3.jpg`, canonical URL, and schema.org `Person` JSON-LD structured data.
+
+---
+
+## 📂 Project Architecture
 
 ```text
-P1n5/
-├── index.html        # Main HTML structure with 3 overlapping image cards
-├── style.css         # Styling, overlapping geometry, animations & responsive layout
-├── script.js         # Hover elevation controller & Web Audio synthesizer engine
-└── README.md         # Documentation & customization guide
+aishportfolio/
+├── index.html                   # Semantic HTML5 markup, SEO meta tags, and structured data
+├── css/
+│   └── style.css                # CSS custom properties, themes, masonry, lightbox, animations
+├── js/
+│   ├── config.js                # Centralized configuration (stats, work, vlogs, socials)
+│   └── main.js                  # Dynamic rendering, lightbox, count-up animation, theme toggle
+├── .github/
+│   └── workflows/
+│       └── static.yml           # Automated GitHub Actions deployment workflow
+├── CHANGELOG.md                 # Detailed changelog of refactoring upgrades (v2.0.0)
+├── p1.jpg, p2.jpg, p3.jpg       # Hero portraits
+├── section2/                    # Gallery photoshoot portraits (1w.png - 10w.png, 4w.jpg)
+└── thumbnail/                   # Video thumbnail assets
 ```
 
 ---
 
-## 🎵 How to Use Your Own Songs & Images
+## 🛠️ Customization & Updating Content
 
-### 1. Using Your Own Images
-In `index.html`, update the `<img>` tags for each card:
-
-```html
-<!-- Card 1: Dark Red -->
-<img src="images/my-red-image.jpg" alt="Dark Red Image" class="card-img" />
-
-<!-- Card 2: Orange -->
-<img src="images/my-orange-image.jpg" alt="Orange Image" class="card-img" />
-
-<!-- Card 3: Yellow -->
-<img src="images/my-yellow-image.jpg" alt="Yellow Image" class="card-img" />
-```
-
-### 2. Using Your Own Songs (MP3 / WAV / OGG)
-In `script.js`, open the `TRACKS` array near the top of the file and enter the path to your audio files:
+To update figures or add new releases, edit **`js/config.js`**:
 
 ```javascript
-const TRACKS = [
+// Example: Adding a new release to js/config.js
+featuredWork: [
   {
-    id: 0,
-    title: "Crimson Solitude",
-    theme: "dark-red",
-    audioSrc: "audio/red-song.mp3",  // <-- Put your MP3 file path here
-    synthType: "drone"
+    id: "new-song",
+    title: "Song Title",
+    nativeTitle: "गाण्याचे नाव",
+    category: "music", // 'music' or 'film'
+    views: "1.2M",
+    role: "Lead Cast",
+    genre: "Romantic Single",
+    credit: "Featuring Aishwarya Harishankar",
+    youtubeUrl: "https://youtu.be/VIDEO_ID?t=0",
+    thumbnail: "https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg",
+    highlight: "1.2M Views"
   },
-  {
-    id: 1,
-    title: "Amber Horizon",
-    theme: "orange",
-    audioSrc: "audio/orange-song.mp3", // <-- Put your MP3 file path here
-    synthType: "warm-pad"
-  },
-  {
-    id: 2,
-    title: "Solar Luminescence",
-    theme: "yellow",
-    audioSrc: "audio/yellow-song.mp3", // <-- Put your MP3 file path here
-    synthType: "chimes"
-  }
-];
+  ...
+]
 ```
 
-If `audioSrc` is left as `null`, the built-in procedural synthesizer plays automatically!
+### Placeholders to Fill:
+- **Business Email**: Search for `[ADD BUSINESS EMAIL]` in `js/config.js` and `index.html`.
+- **Contact Form (Formspree)**: Replace `[ADD FORMSPREE ID]` in `js/config.js` and `index.html` with your Formspree endpoint (e.g., `https://formspree.io/f/your_form_id`).
 
 ---
 
-## 🚀 How to Run the Website
+## 🚀 Deployment
 
-Simply double-click `index.html` to open it in any web browser (Chrome, Edge, Firefox, Safari), or start a local HTTP server:
+The site automatically deploys on every push to the `main` branch via GitHub Actions:
+- **Workflow**: `.github/workflows/static.yml`
+- **Settings**: Repository Settings → Pages → Source: **GitHub Actions**
 
-```powershell
-# Using Python:
-python -m http.server 8000
+---
 
-# Or using Node:
-npx serve .
-```
-
-Then visit `http://localhost:8000` in your browser.
-
+## 📄 License
+This portfolio is created for Aishwarya Harishankar. All images, video materials, and copyrights remain the property of their respective creators and producers.
