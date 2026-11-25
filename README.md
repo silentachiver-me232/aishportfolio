@@ -1,107 +1,44 @@
-# Interactive Tri-Card Hero Screen Experience
+# Aishwarya Harishankar — Official Portfolio
 
-A high-performance, modern full-screen hero section featuring 3 overlapping interactive image panels, reactive depth elevation, and dedicated ambient soundtracks matching your design wireframe.
+[![Deploy static content to Pages](https://github.com/silentachiver-me232/aishportfolio/actions/workflows/static.yml/badge.svg)](https://github.com/silentachiver-me232/aishportfolio/actions/workflows/static.yml)
 
----
+Minimal, visual-first static portfolio for **Aishwarya Harishankar** — Actress, Model & Digital Creator based in Pune, India. Built with plain HTML, CSS variables, and vanilla JavaScript with zero build step for instant GitHub Pages deployment.
 
-## 🌟 Key Features
+## Key Features
 
-1. **Full-Screen Fit First Section (`100vh`)**:
-   - The first section fills the entire screen on initial load.
-   - **Natural Non-Sticky Scroll**: As you scroll down, the section smoothly scrolls out of view in standard document flow, leading to the subsequent content sections.
+- **OTT-Style Hero Carousel**: Horizontal scroll-snap showcase of flagship music videos (*Mazya Sonya*, *Atha Petha Azhakay*, *Lipstick*, *Lal Bindi*, *Gori Gori Paaan*) with Left/Right controls, dots, swipe, and keyboard support.
+- **Organized Showcase Sections**: Separate visual sections for **Music Videos**, **Short Films**, **Acting Projects**, **Brand Collaborations**, **Events**, **Creator Corner**, **Gallery**, **About**, and **Collaborate**.
+- **Gallery Lightbox**: Masonry portrait grid using existing `section2/` assets with keyboard (`Esc`, Left/Right) and touch swipe navigation.
+- **Dark & Light Theme**: Cinematic obsidian dark mode with rose-gold accents and an accessible light-mode toggle respecting `prefers-color-scheme`.
+- **Single-File Data Configuration**: Manage all videos, stats, social profiles, placeholders, and feature flags in `js/config.js`.
 
-2. **Diagram-Accurate Overlapping Layout**:
-   - **Image 1 (Left / Dark Red)**: Anchored on the left edge with a dark red border frame.
-   - **Image 2 (Center / Orange)**: Overlaps the right edge of Image 1 with an orange border frame.
-   - **Image 3 (Right / Yellow)**: Overlaps the right edge of Image 2 with a vivid yellow border frame.
-
-3. **Hover Depth Interaction**:
-   - When the cursor hovers over any card, it **comes ahead** (elevated `z-index`, subtle 3D scale, glowing themed shadow).
-   - The other two cards **get pushed back** (receding scale, dimmed brightness and subtle depth blur).
-
-4. **Dedicated Interactive Soundtrack**:
-   - Hovering over a card instantly triggers that card's unique ambient soundtrack with smooth fade-in.
-   - Hovering to another card smoothly crossfades the audio to the new card's music.
-   - Moving the cursor out of the cards container smoothly fades the music out.
-   - Built with a **Procedural Web Audio Engine** so it works immediately out-of-the-box with **zero external dependencies** and 100% offline reliability.
-
-5. **Audio Unlock & Autoplay Compliance**:
-   - Modern browsers require user interaction before playing audio with sound. A sleek top-right pill lets users enable sound with one click, or clicking anywhere on the page unlocks it automatically.
-
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```text
-P1n5/
-├── index.html        # Main HTML structure with 3 overlapping image cards
-├── style.css         # Styling, overlapping geometry, animations & responsive layout
-├── script.js         # Hover elevation controller & Web Audio synthesizer engine
-└── README.md         # Documentation & customization guide
+├── index.html          # Semantic single-page structure & SEO metadata
+├── style.css           # Design tokens, responsive grids, OTT carousel & themes
+├── script.js           # Dynamic rendering, lightbox, carousel & contact fallback
+├── js/config.js        # Centralized content, YouTube links, stats & placeholders
+├── p1.jpg - p3.jpg     # Flagship hero posters
+├── section2/           # Portrait gallery photos
+├── thumbnail/          # Video thumbnails
+└── card1-3.mp3         # Optional ambient audio tracks (off by default)
 ```
 
----
+## Updating Content & Placeholders
 
-## 🎵 How to Use Your Own Songs & Images
+Open `js/config.js` to replace placeholders before production campaigns:
 
-### 1. Using Your Own Images
-In `index.html`, update the `<img>` tags for each card:
+- `profile.businessEmail`: `[ADD BUSINESS EMAIL]`
+- `profile.formspreeEndpoint`: `https://formspree.io/f/[ADD FORMSPREE ID]`
+- `actingProjects`: Showreel link and `[ADD UPCOMING FILM / SERIES]`
+- `brandCollaborations`: `[ADD FEATURED BRAND CAMPAIGN]`
+- `events`: `[ADD UPCOMING APPEARANCE / EVENT]`
 
-```html
-<!-- Card 1: Dark Red -->
-<img src="images/my-red-image.jpg" alt="Dark Red Image" class="card-img" />
-
-<!-- Card 2: Orange -->
-<img src="images/my-orange-image.jpg" alt="Orange Image" class="card-img" />
-
-<!-- Card 3: Yellow -->
-<img src="images/my-yellow-image.jpg" alt="Yellow Image" class="card-img" />
-```
-
-### 2. Using Your Own Songs (MP3 / WAV / OGG)
-In `script.js`, open the `TRACKS` array near the top of the file and enter the path to your audio files:
-
-```javascript
-const TRACKS = [
-  {
-    id: 0,
-    title: "Crimson Solitude",
-    theme: "dark-red",
-    audioSrc: "audio/red-song.mp3",  // <-- Put your MP3 file path here
-    synthType: "drone"
-  },
-  {
-    id: 1,
-    title: "Amber Horizon",
-    theme: "orange",
-    audioSrc: "audio/orange-song.mp3", // <-- Put your MP3 file path here
-    synthType: "warm-pad"
-  },
-  {
-    id: 2,
-    title: "Solar Luminescence",
-    theme: "yellow",
-    audioSrc: "audio/yellow-song.mp3", // <-- Put your MP3 file path here
-    synthType: "chimes"
-  }
-];
-```
-
-If `audioSrc` is left as `null`, the built-in procedural synthesizer plays automatically!
-
----
-
-## 🚀 How to Run the Website
-
-Simply double-click `index.html` to open it in any web browser (Chrome, Edge, Firefox, Safari), or start a local HTTP server:
+## Local Preview
 
 ```powershell
-# Using Python:
 python -m http.server 8000
-
-# Or using Node:
-npx serve .
 ```
 
-Then visit `http://localhost:8000` in your browser.
-
+Open `http://localhost:8000` in your browser.
