@@ -1,410 +1,868 @@
 <!DOCTYPE html>
-<html lang="en" id="top">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-
-  <!-- Primary Meta Tags -->
-  <title>Aishwarya Harishankar | Actress &amp; Digital Creator</title>
-  <meta name="title" content="Aishwarya Harishankar | Actress &amp; Digital Creator" />
-  <meta name="description" content="Official showcase portfolio of Aishwarya Harishankar — Actress, Model, and Digital Creator based in Pune, India. Watch Mazya Sonya (20M+), Atha Petha Azhakay, thriller short films, and collaborations." />
-  <meta name="keywords" content="Aishwarya Harishankar, Indian Actress, Model, Digital Creator, Mazya Sonya, Atha Petha Azhakay, Lal Bindi, Lipstick, Short Films, Pune Actress" />
-  <meta name="author" content="Aishwarya Harishankar" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://silentachiver-me232.github.io/aishportfolio/" />
-
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:type" content="profile" />
-  <meta property="og:url" content="https://silentachiver-me232.github.io/aishportfolio/" />
-  <meta property="og:title" content="Aishwarya Harishankar | Actress &amp; Digital Creator" />
-  <meta property="og:description" content="Explore official music videos, thriller short films, acting projects, brand collaborations, events, and photo gallery of Aishwarya Harishankar." />
-  <meta property="og:image" content="https://silentachiver-me232.github.io/aishportfolio/p3.jpg" />
-  <meta property="og:locale" content="en_IN" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://silentachiver-me232.github.io/aishportfolio/" />
-  <meta name="twitter:title" content="Aishwarya Harishankar | Actress &amp; Digital Creator" />
-  <meta name="twitter:description" content="Explore official music videos, short films, acting projects, brand collaborations, and visual gallery of Aishwarya Harishankar." />
-  <meta name="twitter:image" content="https://silentachiver-me232.github.io/aishportfolio/p3.jpg" />
-  <meta name="twitter:creator" content="@aishharishankar" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230c0a0e%22/><text x=%2250%25%22 y=%2264%25%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-size=%2254%22 fill=%22%23e08ba5%22>A</text></svg>" />
-
-  <!-- Google Fonts: Playfair Display (Headings), Poppins (Body), Noto Sans Devanagari (Marathi) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- JSON-LD Structured Data (Person) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Aishwarya Harishankar",
-    "jobTitle": ["Actress", "Model", "Digital Creator"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Pune",
-      "addressCountry": "IN"
-    },
-    "knowsLanguage": ["Marathi", "Hindi", "Tamil", "Telugu", "French"],
-    "alumniOf": "Bachelor's Degree in Psychology",
-    "url": "https://silentachiver-me232.github.io/aishportfolio/",
-    "image": "https://silentachiver-me232.github.io/aishportfolio/p3.jpg",
-    "sameAs": [
-      "https://www.instagram.com/aishwaryaharishankar/",
-      "https://www.youtube.com/@aish_harishankar",
-      "https://www.facebook.com/people/Aishwarya-Harishankar/100075923654829/",
-      "https://www.threads.com/@aishwaryaharishankar",
-      "https://www.snapchat.com/@aishwarya_8900",
-      "https://x.com/aishharishankar"
-    ]
-  }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌹Gulabachi Kali🌹 | Aishwarya Harishankar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <a href="#mainContent" class="skip-link">Skip to main content</a>
 
-  <noscript>
-    <div class="noscript-banner">
-      JavaScript is disabled in your browser. Please enable JavaScript to browse carousels, open full-size gallery photos, and submit inquiries.
-    </div>
-  </noscript>
+  <!-- Audio Unlock / Sound Status Banner -->
+  <div id="audioStatusPill" class="audio-pill">
+    <button id="audioToggleBtn" class="audio-btn" aria-label="Toggle Sound">
+      <span class="audio-icon" id="audioIcon">🔇</span>
+      <span class="audio-text" id="audioText">Click anywhere to enable sound</span>
+    </button>
+  </div>
 
-  <!-- ========================================================================
-       STICKY HEADER & NAVIGATION
-       ======================================================================== -->
+  <!-- MAIN HEADER: BRANDING & SOCIAL LINKS -->
   <header class="site-header" id="siteHeader">
-    <div class="container header-inner">
-      <a href="#top" class="brand-link" aria-label="Aishwarya Harishankar Home">
-        <span class="brand-wordmark">Aishwarya Harishankar</span>
+    <div class="header-container">
+      <a href="https://www.instagram.com/aishwaryaharishankar/" target="_blank" rel="noopener noreferrer"
+        class="brand-profile" title="@aishwaryaharishankar on Instagram">
+        <span class="brand-username">aishwaryaharishankar</span>
+        <svg class="instagram-verified-badge" viewBox="0 0 40 40" width="18" height="18" aria-label="Verified"
+          role="img">
+          <title>Verified</title>
+          <path fill="#0095f6"
+            d="M19.998 3.094 14.638 0l-5.9 3.094-6.104-1.636L.998 7.362l-1 6.241L2.27 19.34l-2.272 5.738 1.637 6.103 4.904 3.905 1.636 6.103 6.104-1.636 5.72 2.447 5.72-2.447 6.104 1.636 1.636-6.103 4.904-3.905 1.637-6.103-2.272-5.738 2.272-5.737-1-6.241-1.637-5.904-6.104 1.636-5.903-3.094Z" />
+          <path fill="#ffffff"
+            d="m17.268 27.476-7.07-7.07 2.828-2.829 4.242 4.243 9.899-9.9 2.829 2.829-12.728 12.727Z" />
+        </svg>
       </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="primary-nav" aria-label="Primary sections">
-        <a href="#music-videos" class="nav-link">Music Videos</a>
-        <a href="#short-films" class="nav-link">Short Films</a>
-        <a href="#acting-projects" class="nav-link">Acting</a>
-        <a href="#brand-collaborations" class="nav-link">Brands</a>
-        <a href="#events" class="nav-link">Events</a>
-        <a href="#gallery" class="nav-link">Gallery</a>
-        <a href="#about" class="nav-link">About</a>
+      <!-- Social Media Handles in exact order: Instagram -> YouTube -> Facebook -->
+      <nav class="social-handles-nav" aria-label="Social Media Handles">
+        <!-- 1. Instagram -->
+        <a href="https://www.instagram.com/aishwaryaharishankar/" target="_blank" rel="noopener noreferrer"
+          class="social-btn social-instagram" title="Instagram (@aishwaryaharishankar)" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" class="social-icon" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+
+        <!-- 2. YouTube -->
+        <a href="https://www.youtube.com/@aish_harishankar" target="_blank" rel="noopener noreferrer"
+          class="social-btn social-youtube" title="YouTube (@aish_harishankar)" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" class="social-icon" fill="currentColor">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+
+        <!-- 3. Facebook -->
+        <a href="https://www.facebook.com/people/Aishwarya-Harishankar/100075923654829/?rdid=vb6W0XYe15G0pQWn&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18jhMV6Zs5%2F"
+          target="_blank" rel="noopener noreferrer" class="social-btn social-facebook"
+          title="Facebook (@aishwaryaharishankar)" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" class="social-icon" fill="currentColor">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+        </a>
       </nav>
-
-      <!-- Header Right Controls: Socials (Instagram -> YouTube -> Facebook) + Theme/Audio -->
-      <div class="header-controls">
-        <div class="header-socials" id="headerSocials" aria-label="Social Media">
-          <!-- Populated in Instagram -> YouTube -> Facebook order -->
-        </div>
-
-        <button type="button" class="icon-btn" id="audioToggleBtn" aria-label="Play background music" title="Background music (off)" hidden>
-          <span aria-hidden="true" id="audioIcon">🔇</span>
-        </button>
-
-        <button type="button" class="icon-btn" id="themeToggleBtn" aria-label="Switch to light theme" title="Switch to light theme">
-          <span aria-hidden="true" id="themeIcon">☀️</span>
-        </button>
-
-        <button type="button" class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
-          <span aria-hidden="true" id="mobileMenuIcon">&#9776;</span>
-        </button>
-      </div>
     </div>
   </header>
 
-  <!-- Mobile Navigation Drawer -->
-  <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile navigation" hidden>
-    <div class="mobile-drawer-links">
-      <a href="#music-videos" class="mobile-nav-link">Music Videos</a>
-      <a href="#short-films" class="mobile-nav-link">Short Films</a>
-      <a href="#acting-projects" class="mobile-nav-link">Acting Projects</a>
-      <a href="#brand-collaborations" class="mobile-nav-link">Brand Collaborations</a>
-      <a href="#events" class="mobile-nav-link">Events</a>
-      <a href="#vlogs" class="mobile-nav-link">Creator Corner</a>
-      <a href="#gallery" class="mobile-nav-link">Gallery</a>
-      <a href="#about" class="mobile-nav-link">About</a>
-      <a href="#contact" class="mobile-nav-link mobile-nav-cta">Collaborate</a>
+  <!-- SECTION: OTT / NETFLIX-STYLE HERO CAROUSEL FOR LATEST MUSIC VIDEOS -->
+  <section class="hero-carousel-section" id="heroCarouselSection">
+    <div class="carousel-viewport" id="heroCarouselViewport">
+      <div class="carousel-track" id="heroCarouselTrack">
+
+        <!-- Slide 1: Atha Petha Azhakay -->
+        <div class="carousel-slide" data-index="0" data-audio="./card1.mp3">
+          <div class="slide-media">
+            <img src="./p1.jpg" alt="Atha Petha Azhakay" class="slide-bg-img" />
+            <div class="slide-gradient-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <span class="slide-tag">VIRAL RELEASE • 4.4M VIEWS</span>
+            <h1 class="slide-title">Atha Petha Azhakay</h1>
+            <p class="slide-subtitle">Hit Tamil Folk Song starring Fayaz &amp; Aishwarya Harishankar</p>
+            <div class="slide-actions">
+              <a href="https://youtu.be/pBo_wOG9Ya0" target="_blank" rel="noopener noreferrer" class="btn-ott-primary">
+                <svg viewBox="0 0 24 24" class="btn-icon" fill="currentColor">
+                  <polygon points="6,4 20,12 6,20"></polygon>
+                </svg>
+                <span>Watch on YouTube</span>
+              </a>
+              <button type="button" class="btn-ott-secondary btn-slide-audio" data-audio-src="./card1.mp3">
+                <span class="audio-btn-icon">🔊</span>
+                <span>Play Sample</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Lipstick -->
+        <div class="carousel-slide" data-index="1" data-audio="./card2.mp3">
+          <div class="slide-media">
+            <img src="./p2.jpg" alt="Lipstick" class="slide-bg-img" />
+            <div class="slide-gradient-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <span class="slide-tag">HIT MUSIC VIDEO • 277K VIEWS</span>
+            <h1 class="slide-title">Lipstick 💄</h1>
+            <p class="slide-subtitle">Sensational romantic single featuring Sai Sagar &amp; Aishwarya</p>
+            <div class="slide-actions">
+              <a href="https://youtu.be/UOpCGKkOx0c" target="_blank" rel="noopener noreferrer" class="btn-ott-primary">
+                <svg viewBox="0 0 24 24" class="btn-icon" fill="currentColor">
+                  <polygon points="6,4 20,12 6,20"></polygon>
+                </svg>
+                <span>Watch on YouTube</span>
+              </a>
+              <button type="button" class="btn-ott-secondary btn-slide-audio" data-audio-src="./card2.mp3">
+                <span class="audio-btn-icon">🔊</span>
+                <span>Play Sample</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Mazya Sonya -->
+        <div class="carousel-slide" data-index="2" data-audio="./card3.mp3">
+          <div class="slide-media">
+            <img src="./p3.jpg" alt="Mazya Sonya" class="slide-bg-img" />
+            <div class="slide-gradient-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <span class="slide-tag">BLOCKBUSTER HIT • 20M VIEWS</span>
+            <h1 class="slide-title">Mazya Sonya ✨</h1>
+            <p class="slide-subtitle">Marathi love anthem with Sagar Janardan &amp; Aishwarya Harishankar</p>
+            <div class="slide-actions">
+              <a href="https://youtu.be/SHM06YvO-kQ" target="_blank" rel="noopener noreferrer" class="btn-ott-primary">
+                <svg viewBox="0 0 24 24" class="btn-icon" fill="currentColor">
+                  <polygon points="6,4 20,12 6,20"></polygon>
+                </svg>
+                <span>Watch on YouTube</span>
+              </a>
+              <button type="button" class="btn-ott-secondary btn-slide-audio" data-audio-src="./card3.mp3">
+                <span class="audio-btn-icon">🔊</span>
+                <span>Play Sample</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Lal Bindi -->
+        <div class="carousel-slide" data-index="3">
+          <div class="slide-media">
+            <img src="https://img.youtube.com/vi/IEPJ8bUiIPA/hqdefault.jpg" alt="Lal Bindi" class="slide-bg-img" />
+            <div class="slide-gradient-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <span class="slide-tag">POPULAR RELEASE • 977K VIEWS</span>
+            <h1 class="slide-title">Lal Bindi</h1>
+            <p class="slide-subtitle">Mesmerizing ethnic romantic track sung by Akull</p>
+            <div class="slide-actions">
+              <a href="https://youtu.be/IEPJ8bUiIPA" target="_blank" rel="noopener noreferrer" class="btn-ott-primary">
+                <svg viewBox="0 0 24 24" class="btn-icon" fill="currentColor">
+                  <polygon points="6,4 20,12 6,20"></polygon>
+                </svg>
+                <span>Watch on YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5: Gori Gori Paaan -->
+        <div class="carousel-slide" data-index="4">
+          <div class="slide-media">
+            <img src="https://img.youtube.com/vi/q3g9E5xRw-o/hqdefault.jpg" alt="Gori Gori Paaan"
+              class="slide-bg-img" />
+            <div class="slide-gradient-overlay"></div>
+          </div>
+          <div class="slide-content">
+            <span class="slide-tag">REGIONAL ANTHEM • 20K VIEWS</span>
+            <h1 class="slide-title">Gori Gori Paaan</h1>
+            <p class="slide-subtitle">Graceful traditional Marathi track with vibrant visuals</p>
+            <div class="slide-actions">
+              <a href="https://www.youtube.com/watch?v=q3g9E5xRw-o" target="_blank" rel="noopener noreferrer"
+                class="btn-ott-primary">
+                <svg viewBox="0 0 24 24" class="btn-icon" fill="currentColor">
+                  <polygon points="6,4 20,12 6,20"></polygon>
+                </svg>
+                <span>Watch on YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="mobile-drawer-socials" id="mobileDrawerSocials"></div>
+
+    <!-- Carousel Left/Right Arrow Controls -->
+    <button class="carousel-nav-btn prev" id="carouselPrevBtn" aria-label="Previous Slide">‹</button>
+    <button class="carousel-nav-btn next" id="carouselNextBtn" aria-label="Next Slide">›</button>
+
+    <!-- Dot Indicators -->
+    <div class="carousel-dots" id="carouselDots">
+      <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+      <button class="dot" data-slide="3" aria-label="Slide 4"></button>
+      <button class="dot" data-slide="4" aria-label="Slide 5"></button>
+    </div>
+  </section>
+
+  <!-- STICKY SITE NAVIGATION BAR -->
+  <nav class="sticky-site-nav" id="stickySiteNav">
+    <div class="nav-container">
+      <a href="#musicVideosSection" class="nav-link active">Music Videos</a>
+      <a href="#shortFilmsSection" class="nav-link">Short Films</a>
+      <a href="#actingProjectsSection" class="nav-link">Acting Projects</a>
+      <a href="#brandCollabsSection" class="nav-link">Brand Collabs</a>
+      <a href="#eventsSection" class="nav-link">Events</a>
+      <a href="#vlogsSection" class="nav-link">Vlogs &amp; BTS</a>
+      <a href="#aboutSection" class="nav-link">About</a>
+    </div>
   </nav>
 
-  <main id="mainContent">
-    <!-- ======================================================================
-         1. HERO — CLEAN INTRO + OTT HORIZONTAL MUSIC VIDEOS CAROUSEL
-         ====================================================================== -->
-    <section class="hero-section" id="hero" aria-labelledby="heroHeading">
-      <div class="container">
-        <div class="hero-top-bar">
-          <div class="hero-identity">
-            <p class="hero-tagline">Actress &middot; Model &middot; Digital Creator</p>
-            <h1 class="hero-title" id="heroHeading">Aishwarya Harishankar</h1>
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="content-wrapper">
+
+    <!-- 1. MUSIC VIDEOS SECTION -->
+    <section class="portfolio-section" id="musicVideosSection">
+      <div class="section-header">
+        <h2 class="section-title">Music Videos</h2>
+        <p class="section-subtitle">Official musical releases and viral tracks starring Aishwarya</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Card: Mazya Sonya -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="./p3.jpg" alt="Mazya Sonya" class="card-thumb" loading="lazy" />
+            <span class="card-badge badge-views">20M Views</span>
           </div>
-          <div class="hero-actions">
-            <a href="#music-videos" class="btn btn-primary">Watch Work</a>
-            <a href="#contact" class="btn btn-outline">Collaborate</a>
-          </div>
-        </div>
-
-        <!-- OTT-Platform-Style Horizontal Music Video Strip -->
-        <div class="ott-carousel-block">
-          <div class="ott-row-header">
-            <h2 class="ott-row-label">Latest Music Videos</h2>
-            <div class="ott-nav-controls">
-              <button type="button" class="scroll-arrow-btn" id="ottPrevBtn" aria-label="Scroll music videos left">
-                <span aria-hidden="true">&#10094;</span>
-              </button>
-              <button type="button" class="scroll-arrow-btn" id="ottNextBtn" aria-label="Scroll music videos right">
-                <span aria-hidden="true">&#10095;</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="ott-track" id="ottTrack" role="region" aria-label="Latest music videos showcase" tabindex="0">
-            <!-- Rendered dynamically from js/config.js -->
-          </div>
-
-          <div class="ott-dots" id="ottDots" aria-label="Slide indicators"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         2. COMPACT STATS STRIP
-         ====================================================================== -->
-    <section class="stats-section" id="statsSection" aria-label="Audience Reach">
-      <div class="container">
-        <div class="stats-grid" id="statsGrid">
-          <!-- Rendered from js/config.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         3. MUSIC VIDEOS
-         ====================================================================== -->
-    <section class="portfolio-section" id="music-videos" aria-labelledby="musicVideosHeading">
-      <div class="container">
-        <div class="section-header-row">
-          <h2 class="section-title" id="musicVideosHeading">Music Videos</h2>
-          <a href="https://www.youtube.com/@aish_harishankar" target="_blank" rel="noopener noreferrer" class="section-more-link">YouTube &rarr;</a>
-        </div>
-        <div class="media-grid" id="musicVideosGrid">
-          <!-- Rendered from js/config.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         4. SHORT FILMS
-         ====================================================================== -->
-    <section class="portfolio-section section-alt" id="short-films" aria-labelledby="shortFilmsHeading">
-      <div class="container">
-        <div class="section-header-row">
-          <h2 class="section-title" id="shortFilmsHeading">Short Films</h2>
-        </div>
-        <div class="media-grid" id="shortFilmsGrid">
-          <!-- Rendered from js/config.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         5. ACTING PROJECTS
-         ====================================================================== -->
-    <section class="portfolio-section" id="acting-projects" aria-labelledby="actingHeading">
-      <div class="container">
-        <div class="section-header-row">
-          <h2 class="section-title" id="actingHeading">Acting Projects</h2>
-        </div>
-        <div class="media-grid media-grid-4" id="actingGrid">
-          <!-- Rendered from js/config.js -->
-        </div>
-        <div class="languages-bar" id="languagesBar" aria-label="Languages spoken">
-          <!-- Rendered from js/config.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         6. BRAND COLLABORATIONS
-         ====================================================================== -->
-    <section class="portfolio-section section-alt" id="brand-collaborations" aria-labelledby="brandsHeading">
-      <div class="container">
-        <div class="section-header-row">
-          <h2 class="section-title" id="brandsHeading">Brand Collaborations</h2>
-          <a href="#contact" class="section-more-link">Partner With Us &rarr;</a>
-        </div>
-        <div class="media-grid media-grid-4" id="brandsGrid">
-          <!-- Rendered from js/config.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         7. EVENTS & MILESTONES
-         ====================================================================== -->
-    <section class="portfolio-section" id="events" aria-labelledby="eventsHeading">
-      <div class="container">
-        <div class="section-header-row">
-          <h2 class="section-title" id="eventsHeading">Events</h2>
-        </div>
-        <div class="media-grid media-grid-3" id="eventsGrid">
-          <!-- Rendered from js/config.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         8. CREATOR CORNER (VLOGS & BTS — HORIZONTAL SCROLL ROW)
-         ====================================================================== -->
-    <section class="portfolio-section section-alt" id="vlogs" aria-labelledby="vlogsHeading">
-      <div class="container">
-        <div class="section-header-row">
-          <h2 class="section-title" id="vlogsHeading">Creator Corner</h2>
-          <div class="ott-nav-controls">
-            <button type="button" class="scroll-arrow-btn" id="vlogsPrevBtn" aria-label="Scroll vlogs left">
-              <span aria-hidden="true">&#10094;</span>
-            </button>
-            <button type="button" class="scroll-arrow-btn" id="vlogsNextBtn" aria-label="Scroll vlogs right">
-              <span aria-hidden="true">&#10095;</span>
-            </button>
-          </div>
-        </div>
-        <div class="horizontal-rail" id="vlogsTrack" role="region" aria-label="Creator Corner vlogs" tabindex="0">
-          <!-- Rendered from js/config.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         9. VISUAL GALLERY (MASONRY + LIGHTBOX)
-         ====================================================================== -->
-    <section class="portfolio-section" id="gallery" aria-labelledby="galleryHeading">
-      <div class="container">
-        <div class="section-header-row">
-          <h2 class="section-title" id="galleryHeading">Gallery</h2>
-        </div>
-        <div class="gallery-masonry" id="galleryGrid">
-          <!-- Rendered from js/config.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         10. ABOUT (CONCISE BIO + VERIFIED HIGHLIGHTS)
-         ====================================================================== -->
-    <section class="portfolio-section section-alt" id="about" aria-labelledby="aboutHeading">
-      <div class="container about-layout">
-        <div class="about-photo-frame">
-          <img src="./section2/4w.jpg" alt="Aishwarya Harishankar close-up natural indoor portrait" class="about-portrait" width="1080" height="1080" loading="lazy" decoding="async" />
-        </div>
-        <div class="about-body">
-          <h2 class="section-title" id="aboutHeading">About</h2>
-          <!-- BIO TEXT: EDIT HERE OR IN js/config.js -->
-          <p class="about-bio" id="aboutBio"></p>
-          <div class="about-highlights" id="aboutHighlights"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         11. COLLABORATE & CONTACT
-         ====================================================================== -->
-    <section class="portfolio-section" id="contact" aria-labelledby="contactHeading">
-      <div class="container">
-        <div class="contact-panel">
-          <div class="contact-header">
-            <h2 class="section-title" id="contactHeading">Collaborate</h2>
-            <p class="contact-subtitle">For casting, music videos, brand campaigns, and event appearances.</p>
-          </div>
-
-          <form class="contact-form" id="contactForm" action="https://formspree.io/f/[ADD FORMSPREE ID]" method="POST">
-            <div class="form-grid-2">
-              <div class="form-field">
-                <label for="contactName" class="form-label">Name</label>
-                <input type="text" id="contactName" name="name" class="form-control" placeholder="Your name" required />
-              </div>
-              <div class="form-field">
-                <label for="contactEmail" class="form-label">Email</label>
-                <input type="email" id="contactEmail" name="_replyto" class="form-control" placeholder="name@company.com" required />
-              </div>
-            </div>
-
-            <div class="form-field">
-              <label for="contactEnquiryType" class="form-label">Enquiry Type</label>
-              <select id="contactEnquiryType" name="enquiry_type" class="form-control" required>
-                <option value="" disabled selected>Select an option...</option>
-                <option value="Casting">Casting (Film / Series / Acting)</option>
-                <option value="Brand Collaboration">Brand Collaboration</option>
-                <option value="Music Video">Music Video</option>
-                <option value="Event Appearance">Event Appearance</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-
-            <div class="form-field">
-              <label for="contactMessage" class="form-label">Message</label>
-              <textarea id="contactMessage" name="message" class="form-control form-textarea" placeholder="Brief project overview, dates, or collaboration details..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-submit">Send Enquiry</button>
-            <p class="form-feedback" id="formFeedback" role="status" aria-live="polite" hidden></p>
-          </form>
-
-          <div class="contact-footer-bar">
-            <a href="mailto:[ADD BUSINESS EMAIL]" class="email-pill" id="businessEmailLink">
-              <span aria-hidden="true">&#9993;</span>
-              <span id="businessEmailText">[ADD BUSINESS EMAIL]</span>
+          <div class="card-body">
+            <h3 class="card-title">Mazya Sonya</h3>
+            <p class="card-desc">Sagar Janardan &amp; Aishwarya Harishankar</p>
+            <a href="https://youtu.be/SHM06YvO-kQ" target="_blank" rel="noopener noreferrer" class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
             </a>
-            <div class="contact-socials" id="contactSocials" aria-label="All Social Handles"></div>
           </div>
+        </article>
+
+        <!-- Card: Atha Petha Azhakay -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="./p1.jpg" alt="Atha Petha Azhakay" class="card-thumb" loading="lazy" />
+            <span class="card-badge badge-views">4.4M Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Atha Petha Azhakay</h3>
+            <p class="card-desc">Fayaz, Anthony Daasan &amp; Aishwarya</p>
+            <a href="https://youtu.be/pBo_wOG9Ya0" target="_blank" rel="noopener noreferrer" class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card: Lal Bindi -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/IEPJ8bUiIPA/hqdefault.jpg" alt="Lal Bindi" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">977K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Lal Bindi</h3>
+            <p class="card-desc">Romantic single sung by Akull</p>
+            <a href="https://youtu.be/IEPJ8bUiIPA" target="_blank" rel="noopener noreferrer" class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card: Lipstick -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="./p2.jpg" alt="Lipstick" class="card-thumb" loading="lazy" />
+            <span class="card-badge badge-views">277K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Lipstick 💄</h3>
+            <p class="card-desc">Sai Sagar &amp; Aishwarya Harishankar</p>
+            <a href="https://youtu.be/UOpCGKkOx0c" target="_blank" rel="noopener noreferrer" class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card: Gori Gori Paaan -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/q3g9E5xRw-o/hqdefault.jpg" alt="Gori Gori Paaan" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">20K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Gori Gori Paaan</h3>
+            <p class="card-desc">Traditional Marathi melody &amp; dance</p>
+            <a href="https://www.youtube.com/watch?v=q3g9E5xRw-o" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Placeholder: Upcoming Music Video -->
+        <article class="content-card card-placeholder">
+          <div class="card-media media-placeholder">
+            <span class="placeholder-icon">🎵</span>
+            <span class="card-badge badge-soon">Coming Soon</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">New Musical Release</h3>
+            <p class="card-desc">Exciting collaboration currently under production</p>
+            <div class="btn-card-placeholder">Stay Tuned</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 2. SHORT FILMS SECTION -->
+    <section class="portfolio-section" id="shortFilmsSection">
+      <div class="section-header">
+        <h2 class="section-title">Short Films</h2>
+        <p class="section-subtitle">Critically acclaimed thrillers and dramatic short stories</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Card: Hide N Seek -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/zA6cRKmbj6g/hqdefault.jpg" alt="Hide N Seek" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">41K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hide N Seek</h3>
+            <p class="card-desc">Psychological suspense short film</p>
+            <a href="https://www.youtube.com/watch?v=zA6cRKmbj6g" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card: Adharcard -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/5HcJUAdoTls/hqdefault.jpg" alt="Adharcard" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">33K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Adharcard</h3>
+            <p class="card-desc">Compelling social drama short film</p>
+            <a href="https://www.youtube.com/watch?v=5HcJUAdoTls" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card: Band Aid -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/erCw6DZwtKw/hqdefault.jpg" alt="Band Aid" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">30K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Band Aid</h3>
+            <p class="card-desc">Intense mystery and emotion-driven narrative</p>
+            <a href="https://www.youtube.com/watch?v=erCw6DZwtKw" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card: Whisper -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/NLbR4Ldr5Lk/hqdefault.jpg" alt="Whisper" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">18K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Whisper</h3>
+            <p class="card-desc">Chilling atmospheric thriller short film</p>
+            <a href="https://www.youtube.com/watch?v=NLbR4Ldr5Lk" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Placeholder: Upcoming Short Film -->
+        <article class="content-card card-placeholder">
+          <div class="card-media media-placeholder">
+            <span class="placeholder-icon">🎬</span>
+            <span class="card-badge badge-soon">Coming Soon</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Untitled Thriller</h3>
+            <p class="card-desc">Upcoming narrative project in post-production</p>
+            <div class="btn-card-placeholder">In Production</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3. ACTING PROJECTS SECTION -->
+    <section class="portfolio-section" id="actingProjectsSection">
+      <div class="section-header">
+        <h2 class="section-title">Acting Projects</h2>
+        <p class="section-subtitle">Upcoming feature films, web series, and theatrical performances</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="content-card card-placeholder">
+          <div class="card-media media-placeholder">
+            <span class="placeholder-icon">🎭</span>
+            <span class="card-badge badge-soon">Feature Film</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Mainstream Debut Film</h3>
+            <p class="card-desc">Lead role in an upcoming regional drama feature</p>
+            <div class="btn-card-placeholder">Announcement Soon</div>
+          </div>
+        </article>
+
+        <article class="content-card card-placeholder">
+          <div class="card-media media-placeholder">
+            <span class="placeholder-icon">📺</span>
+            <span class="card-badge badge-soon">OTT Original</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Web Series Project</h3>
+            <p class="card-desc">Recurring character in a major streaming platform series</p>
+            <div class="btn-card-placeholder">In Development</div>
+          </div>
+        </article>
+
+        <article class="content-card card-placeholder">
+          <div class="card-media media-placeholder">
+            <span class="placeholder-icon">📽️</span>
+            <span class="card-badge badge-soon">Anthology</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Drama Anthology</h3>
+            <p class="card-desc">Special episodic presentation with celebrated directors</p>
+            <div class="btn-card-placeholder">Pre-Production</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. BRAND COLLABORATIONS SECTION -->
+    <section class="portfolio-section" id="brandCollabsSection">
+      <div class="section-header">
+        <h2 class="section-title">Brand Collaborations</h2>
+        <p class="section-subtitle">Fashion, beauty, and lifestyle brand partnerships</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="content-card card-placeholder">
+          <div class="card-media media-placeholder">
+            <span class="placeholder-icon">👗</span>
+            <span class="card-badge badge-soon">Fashion</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ethnic &amp; Couture Wear</h3>
+            <p class="card-desc">Brand ambassador campaigns and designer lookbooks</p>
+            <div class="btn-card-placeholder">View Portfolio</div>
+          </div>
+        </article>
+
+        <article class="content-card card-placeholder">
+          <div class="card-media media-placeholder">
+            <span class="placeholder-icon">💄</span>
+            <span class="card-badge badge-soon">Beauty &amp; Care</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Skincare &amp; Cosmetics</h3>
+            <p class="card-desc">Product endorsements and beauty masterclasses</p>
+            <div class="btn-card-placeholder">Campaign Showcase</div>
+          </div>
+        </article>
+
+        <article class="content-card card-placeholder">
+          <div class="card-media media-placeholder">
+            <span class="placeholder-icon">💎</span>
+            <span class="card-badge badge-soon">Lifestyle</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Jewelry &amp; Luxury Goods</h3>
+            <p class="card-desc">Commercial shoots and festive collection releases</p>
+            <div class="btn-card-placeholder">In Partnership</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. EVENTS & APPEARANCES SECTION -->
+    <section class="portfolio-section" id="eventsSection">
+      <div class="section-header">
+        <h2 class="section-title">Events &amp; Appearances</h2>
+        <p class="section-subtitle">Red carpets, award shows, and festival launches</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/DYOYsIkO51o/hqdefault.jpg" alt="Toxic Album Launch" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">Red Carpet</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Toxic Album Launch</h3>
+            <p class="card-desc">Red carpet presence, media interviews &amp; premiere</p>
+            <a href="https://www.youtube.com/watch?v=DYOYsIkO51o" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch Event Vlog ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/RVQHta75gIs/hqdefault.jpg" alt="100K Silver Play Button"
+              class="card-thumb" loading="lazy" />
+            <span class="card-badge badge-views">Creator Award</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">YouTube 100K Gala</h3>
+            <p class="card-desc">Creator community celebration &amp; Silver Play Button award</p>
+            <a href="https://www.youtube.com/watch?v=RVQHta75gIs" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch Unboxing ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="content-card card-placeholder">
+          <div class="card-media media-placeholder">
+            <span class="placeholder-icon">🌟</span>
+            <span class="card-badge badge-soon">Upcoming</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Film Festival Appearances</h3>
+            <p class="card-desc">Short film screenings and jury panel appearances</p>
+            <div class="btn-card-placeholder">Season 2026</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. VLOGS & BTS SECTION -->
+    <section class="portfolio-section" id="vlogsSection">
+      <div class="section-header">
+        <h2 class="section-title">Behind The Scenes &amp; Vlogs</h2>
+        <p class="section-subtitle">Exclusive shoot bloopers, personal Q&amp;As, and creator journeys</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Vlog 1: Azhakay BTS -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/_JXtFtg_4wY/hqdefault.jpg" alt="Atha Petha Azhakay BTS"
+              class="card-thumb" loading="lazy" />
+            <span class="card-badge badge-views">130K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Atha Petha Azhakay BTS 🌾</h3>
+            <p class="card-desc">Behind the scenes &amp; shoot memories with Fayaz</p>
+            <a href="https://www.youtube.com/watch?v=_JXtFtg_4wY" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Vlog 2: Introducing Myself -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/XVxcnrA62u8/hqdefault.jpg" alt="Introducing Myself!" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">33K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Introducing Myself! ✨</h3>
+            <p class="card-desc">Debut vlog • Psychology studies &amp; creative journey</p>
+            <a href="https://www.youtube.com/watch?v=XVxcnrA62u8" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Vlog 3: Q&A Part 1 -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/b-XQV7ZPJHw/hqdefault.jpg" alt="Q&A Part 1" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">17K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Answering Questions (Part 1)</h3>
+            <p class="card-desc">GRWM Q&amp;A • Pune roots, food, saree styling</p>
+            <a href="https://www.youtube.com/watch?v=b-XQV7ZPJHw" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Vlog 4: Q&A Part 2 -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/gMTcJG01nB4/hqdefault.jpg" alt="Q&A Part 2" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">11K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Answering Questions (Part 2)</h3>
+            <p class="card-desc">Daily life, career thoughts &amp; personal stories</p>
+            <a href="https://www.youtube.com/watch?v=gMTcJG01nB4" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Vlog 5: Lipstick BTS -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/yFvTFv1gZoI/hqdefault.jpg" alt="Lipstick BTS" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">9K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Lipstick BTS 💄</h3>
+            <p class="card-desc">Exclusive shoot bloopers &amp; fun moments with Sagar</p>
+            <a href="https://www.youtube.com/watch?v=yFvTFv1gZoI" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Vlog 6: Toxic Album Launch -->
+        <article class="content-card">
+          <div class="card-media">
+            <img src="https://img.youtube.com/vi/DYOYsIkO51o/hqdefault.jpg" alt="Toxic Launch" class="card-thumb"
+              loading="lazy" />
+            <span class="card-badge badge-views">18K Views</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Toxic Album Launch Vlog</h3>
+            <p class="card-desc">Full launch event experience &amp; friends</p>
+            <a href="https://www.youtube.com/watch?v=DYOYsIkO51o" target="_blank" rel="noopener noreferrer"
+              class="btn-card-action">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 7. ABOUT & BIO SECTION (Includes 5-Click Secret Vault Trigger) -->
+    <section class="portfolio-section" id="aboutSection">
+      <div class="section-header">
+        <h2 class="section-title">About Aishwarya</h2>
+        <p class="section-subtitle">Actress, Model, and Digital Creator</p>
+      </div>
+
+      <div class="about-card-wrapper">
+        <div class="about-card">
+
+          <!-- Avatar with 5-Click Easter Egg Vault Trigger -->
+          <div class="bio-avatar-ring" id="quickIntroAvatarRing" title="Aishwarya Harishankar" role="button"
+            tabindex="0" aria-label="Aishwarya Harishankar">
+            <img src="./section2/4w.jpg" alt="Aishwarya Harishankar" class="bio-avatar-img" id="quickIntroAvatarImg" />
+            <span class="bio-online-indicator" title="Active"></span>
+          </div>
+
+          <div class="about-info">
+            <h3 class="about-name">Aishwarya Harishankar</h3>
+            <p class="about-bio">
+              Indian actress, model, and digital storyteller based in Pune. Featured in chart-topping music videos with
+              over 25M+ views across Marathi, Tamil, and Hindi entertainment industries.
+            </p>
+
+            <div class="about-metrics-row">
+              <div class="about-metric">
+                <span class="metric-label">Age</span>
+                <span class="metric-value">21 Years</span>
+              </div>
+              <div class="about-metric">
+                <span class="metric-label">Location</span>
+                <span class="metric-value">Pune, Maharashtra</span>
+              </div>
+              <div class="about-metric">
+                <span class="metric-label">Education</span>
+                <span class="metric-value">BA in Psychology</span>
+              </div>
+              <div class="about-metric">
+                <span class="metric-label">Languages</span>
+                <span class="metric-value">Marathi • Hindi • Tamil • Telugu • French</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- ========================================================================
-       MINIMAL FOOTER
-       ======================================================================== -->
+  <!-- SITE FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="footer-container">
       <div class="footer-brand">
-        <span class="footer-name">Aishwarya Harishankar</span>
-        <span class="footer-loc">Pune, India</span>
+        <span class="footer-logo">Aishwarya Harishankar</span>
+        <p class="footer-tagline">Official Portfolio &amp; Digital Showcase</p>
       </div>
 
-      <div class="footer-socials" id="footerSocials" aria-label="Primary Social Profiles">
-        <!-- Strictly ordered: Instagram -> YouTube -> Facebook -->
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/aishwaryaharishankar/" target="_blank" rel="noopener noreferrer"
+          class="footer-social-link">Instagram</a>
+        <a href="https://www.youtube.com/@aish_harishankar" target="_blank" rel="noopener noreferrer"
+          class="footer-social-link">YouTube</a>
+        <a href="https://www.facebook.com/people/Aishwarya-Harishankar/100075923654829/?rdid=vb6W0XYe15G0pQWn&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18jhMV6Zs5%2F"
+          target="_blank" rel="noopener noreferrer" class="footer-social-link">Facebook</a>
       </div>
 
-      <div class="footer-meta">
-        <span class="footer-copy">&copy; <span id="copyrightYear">2026</span> Aishwarya Harishankar</span>
-        <button type="button" class="back-top-btn" id="btnBackToTop" aria-label="Back to top">Back to top &uarr;</button>
+      <div class="footer-copy">
+        <p>© 2026 Aishwarya Harishankar. All rights reserved.</p>
+        <button type="button" class="btn-back-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          Back to Top ↑
+        </button>
       </div>
     </div>
   </footer>
 
-  <!-- ========================================================================
-       LIGHTBOX MODAL (KEYBOARD + SWIPE)
-       ======================================================================== -->
-  <div class="lightbox" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo gallery viewer" hidden>
-    <button type="button" class="lightbox-close" id="btnLightboxClose" aria-label="Close gallery viewer">&times;</button>
-    <button type="button" class="lightbox-nav lightbox-prev" id="btnLightboxPrev" aria-label="Previous photo">&#10094;</button>
-    <figure class="lightbox-figure">
-      <img src="" alt="" class="lightbox-img" id="lightboxImg" />
-      <figcaption class="lightbox-caption" id="lightboxCaption"></figcaption>
-    </figure>
-    <button type="button" class="lightbox-nav lightbox-next" id="btnLightboxNext" aria-label="Next photo">&#10095;</button>
+  <!-- ==========================================================================
+       SECRET MESSAGE MODAL (TRIGGERED BY 5 CLICKS ON QUICK INTRO PHOTO)
+       ========================================================================== -->
+  <div class="vault-modal-overlay" id="vaultModalOverlay" style="display: none;" role="dialog" aria-modal="true"
+    aria-labelledby="vaultModalTitle">
+    <div class="vault-modal-backdrop" id="vaultModalBackdrop"></div>
+    <div class="vault-modal-card" id="vaultModalCard">
+
+      <button type="button" class="vault-modal-close" id="btnVaultModalClose" title="Fermer" aria-label="Close modal">
+        &times;
+      </button>
+
+      <!-- French Disclaimer Box -->
+      <div class="vault-disclaimer-box" id="vaultDisclaimerBox">
+        <div class="vault-disclaimer-header">
+          <span class="vault-disclaimer-icon">⚠️</span>
+          <span class="vault-disclaimer-label">Avertissement de Sécurité</span>
+        </div>
+        <h3 class="vault-disclaimer-title" id="vaultModalTitle">Veuillez lire ce message seul(e), s'il vous plaît.</h3>
+        <p class="vault-disclaimer-text">
+          « Avertissement : S'il vous plaît, lisez ce message seul(e). Ce contenu est strictement confidentiel et
+          personnel. Assurez-vous d'être totalement seul(e) et à l'abri de tout regard indiscret avant de déverrouiller.
+          Une fois révélé, ce message s'autodétruira après 5 minutes et sera effacé définitivement de partout — y
+          compris du code source. Aucune récupération n'est possible. »
+        </p>
+        <p class="vault-disclaimer-sub">
+          (Disclaimer: Please read this message alone. Strictly confidential &amp; self-destructing after 5 minutes.)
+        </p>
+      </div>
+
+      <!-- Password Form (Locked State) -->
+      <div class="vault-form-wrapper" id="vaultLockedState">
+        <form id="vaultUnlockForm" onsubmit="return false;" novalidate>
+          <div class="vault-input-group">
+            <input type="password" id="vaultPassInput" class="vault-pass-input" placeholder="Entrez le mot de passe..."
+              autocomplete="off" spellcheck="false" required />
+            <button type="button" class="vault-toggle-vis" id="btnVaultToggle" title="Afficher/Masquer le mot de passe"
+              aria-label="Toggle password visibility">
+              👁️
+            </button>
+          </div>
+
+          <div class="vault-error-msg" id="vaultErrorMsg" role="alert"></div>
+
+          <button type="submit" class="btn-vault-unlock" id="btnVaultUnlock">
+            <span>🔓</span>
+            <span>Déverrouiller le message</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Revealed State Container (Initially Hidden) -->
+      <div class="vault-revealed-container" id="vaultRevealedState" style="display: none;">
+        <div class="vault-envelope-badge">
+          <span>📩</span>
+          <span>MESSAGE PERSONNEL &amp; CONFIDENTIEL</span>
+        </div>
+
+        <div class="vault-message-box" id="vaultMessageBox">
+          <div class="vault-quote-mark">"</div>
+          <div class="vault-revealed-text" id="vaultRevealedText"></div>
+          <p class="vault-notice-text">Ce message s'autodétruira après le compte à rebours. Aucune sauvegarde n'existe.
+          </p>
+        </div>
+
+        <!-- Self-Destruct Timer Box -->
+        <div class="vault-timer-box">
+          <div class="vault-timer-header">
+            <span>⏳ Autodestruction programmée dans :</span>
+            <span class="vault-timer-val" id="vaultTimerVal">5:00</span>
+          </div>
+          <div class="vault-timer-track">
+            <div class="vault-timer-bar" id="vaultTimerBar"></div>
+          </div>
+        </div>
+
+        <!-- Destroy Button -->
+        <button type="button" class="btn-vault-destroy" id="btnVaultDestroy">
+          <span>🔥</span>
+          <span>Détruire ce message définitivement maintenant</span>
+        </button>
+      </div>
+
+      <!-- Permanently Destroyed State (Initially Hidden) -->
+      <div class="vault-destroyed-box" id="vaultDestroyedState" style="display: none;">
+        <div class="vault-destroyed-icon">🚫</div>
+        <h3 class="vault-destroyed-title">Ce message a été définitivement détruit</h3>
+        <p class="vault-destroyed-desc">
+          Le message a été effacé et détruit de partout : supprimé de la mémoire, du document et du code source. Il
+          n'est plus accessible et ne peut plus jamais être récupéré.
+        </p>
+        <div class="vault-destroyed-badge">EFFACÉ ET IRRÉCUPÉRABLE</div>
+        <div class="vault-reset-hint" id="vaultResetHint" title="Réinitialiser pour les tests">
+          [Réinitialiser pour test]
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <script src="js/config.js"></script>
+
+
   <script src="script.js"></script>
 </body>
 

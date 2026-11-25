@@ -6,5 +6,5 @@ Thumbs.db
 # Archives & Temporary files
 *.zip
 *.pptm
+*.bak
 scratch/
-
